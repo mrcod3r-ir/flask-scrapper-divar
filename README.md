@@ -31,10 +31,12 @@ This project uses Flask as a web framework and Selenium as a web scraping tool t
 
 ---
 
-1. Clone the repository: `git clone https://github.com/your-username/divar-scraper.git`
-2. Install dependencies: `pip install -r requirements.txt`
-3. Set up ChromeDriver: `chromedriver --version` (make sure it's installed and up-to-date)
-4. Run the Flask app: `flask run`
+1. Clone the repository: `git clone git@github.com:mrcod3r-ir/flask-scrapper-divar.git`
+2. install venv: `virtualenv venv`
+3. activate venv : `venv\Scripts\activate`
+4. Install dependencies: `pip install -r requirements.txt`
+5. Run the Flask app: `flask run`
+6. open from terminal: `http://127.0.0.1:5000`
 
 ## API Endpoints
 

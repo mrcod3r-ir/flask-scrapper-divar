@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {% block title %}
+
+      {% endblock %}
+    </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/style.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Vazirmatn-font-face.css') }}
+    " />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='assets/images/fav.png') }}" type="image/png" />
+  </head>
+  <body>
+    <div class="container my-5">
+      <!-- Content here -->
+      <h1>
+        {% block heading %}
+
+        {% endblock %}
+      </h1>
+      {% block content %}
+        <!-- Default content goes here -->
+      {% endblock %}
+    </div>
+    <!-- script -->
+    <script src="{{ url_for('static', filename='assets/js/bootstrap.min.js') }}"></script>
+  </body>
+</html>
